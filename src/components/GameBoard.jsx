@@ -18,7 +18,7 @@ const GameBoard = ({ onSelectSquare, board }) => {
   return (
     <ol id="game-board">
       {board.map((row, rowIndex) => (
-        <li key={rowIndex}>
+        <li id="gameboard-row" key={rowIndex}>
           <ol>
             {row.map((playerSymbol, colIndex) => (
               <li key={colIndex}>
